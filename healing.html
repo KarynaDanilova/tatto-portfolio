@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav id="navbar" class="navbar">
+        <div class="navbar-content">
+            <a href="#home" class="logo">
+                <img class="logo" src="media/logo.png">
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>           
+           <div class="links">
+                <a class="link" href="index.html">home</a>
+                <a class="link" href="index.html#about">about</a>
+                <a class="link" href="index.html#work">work</a>
+                <a class="link" href="index.html#contact">talk2me</a>
+                <a href="healing.html" class="link btn-23">
+            <span class="text">healing</span>
+            <span aria-hidden="true" class="marquee">healing</span>
+        </a>
+            </div>
+        </div>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const links = document.querySelector('.links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    links.classList.toggle('active');
+  });
+</script>
+    </nav>
+<section class="healing-section">
+  <h1 class="healing-title">HOW TO TAKE CARE OF A FRESH TATTOO?</h1>
+
+  <div class="healing-gallery">
+    <div class="gallery-item before">
+      <h2>BEFORE</h2>
+      <img src="media/healing-before.png" alt="Before tattoo care">
+    </div>
+
+    <div class="gallery-item after">
+      <h2>AFTER</h2>
+      <img src="media/healing-after.png" alt="After tattoo care">
+    </div>
+  </div>
+</section>
+
+    <section class="instructions-section">
+        <h1 class="section-title">instructions</h1>
+        <div class="instructions">
+            <p class="instructions-text">
+            Instructions are information on how to do, make, or use something, often presented as a step-by-step guide or a set of directions. They can also refer to the act of teaching, a command, or a computer command.</p>
+            <h3 class="step-by-step">step 1/</h3>
+            <ul class="steps">
+            <li class="step">step 1</li>
+            <li class="step">step 2</li>
+            <li class="step">step 3</li>
+            </ul>
+            <h3 class="step-by-step">step 2/</h3>
+            <ul class="steps">
+            <li class="step">step 1</li>
+            <li class="step">step 2</li>
+            </ul>
+            <p class="instructions-contact">contact if needed</p>
+        </div> 
+    </section>
+   <footer class="footer">
+        <h1 class="footer-title">YourName SecondName</h1>
+        <div class="footer-row">
+            <h2 class="footer-contact-info">
+                <a href="instagram">@intagram</a><br>
+                <a href="mailto:">gmail@gmail.com</a><br>
+                <a href="tel:">+9945539305</a>
+            </h2>
+            <h2 class="healing-text">do you want to know how to <a href="healing" >heal</a> your tattoo?</h2>
+        </div>
+        <div class="footer-links">
+            <a class="footer-link" href="#home">home</a>
+            <a class="footer-link" href="#about">about</a>
+            <a class="footer-link" href="#work">work</a>
+            <a class="footer-link" href="#contact">talk2me</a>
+            <a href="healing.html" class="btn-23 footer">
+                <span class="text">healing</span>
+                <span aria-hidden="true" class="marquee">healing</span>
+            </a>
+        </div>
+        <p class="footer-credit">© 2025 Client Name. Website by <a href="https://yourportfolio.com">Karyna Danilova</a>.</p>
+    </footer>
+</body>
+</html>

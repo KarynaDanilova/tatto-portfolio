@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tatto portfolio</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navbar-content">
+            <a href="#home" class="logo">
+                <img class="logo" src="media/logo.png">
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>           
+           <div class="links">
+                <a class="link" href="#home">home</a>
+                <a class="link" href="#about">about</a>
+                <a class="link" href="#work">work</a>
+                <a class="link" href="#contact">talk2me</a>
+                <a href="healing.html" class="btn-23">
+            <span class="text">healing</span>
+            <span aria-hidden="true" class="marquee">healing</span>
+        </a>
+            </div>
+        </div>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const links = document.querySelector('.links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    links.classList.toggle('active');
+  });
+</script>
+    </nav>
+    <section class="hero" id="home">
+        <h1 class="title">Name SecondName</h1>
+        <h2 class="hero-ifro">i can do your next tattoo</h2>
+        <a href="#contact" class="btn-23">
+            <span class="text">contact</span>
+            <span aria-hidden="true" class="marquee">contact</span>
+        </a>
+    </section>
+    <section id="about" class="about">   
+         <h2 class="section-title">about</h2>
+        <div class="about-cards-section">
+            <div class="cards">
+                <div class="card">
+                    <p class="about-text fit-text">En portfolio er en samling av arbeider, prestasjoner eller investeringer, og begrepet brukes i flere sammenhenger: en kunstnerisk portfolio viser frem kunstneriske ferdigheter, en akademisk portfolio er en portfolio</p>
+                </div>
+                <div class="card">
+                    <img src="media/content-1.jpg" class="about-img">
+                </div>
+                <div class="card card-overlay">
+                    <img src="media/content-4.jpg" class="about-img">
+                    <p class="about-text fit-text">En portfolio er en samling av arbeider, prestasjoner eller investeringer, og begrepet brukes i flere sammenhenger: en kunstnerisk portfolio viser frem kunstneriske ferdigheter, en akademisk portfolio er en portfolio</p>
+                </div>
+            </div>
+        </div>
+ <script>
+window.addEventListener('load', () => {
+  const cards = document.querySelectorAll('.about-cards-section .card');
+  let maxHeight = 0;
+  cards.forEach(card => maxHeight = Math.max(maxHeight, card.offsetHeight));
+  cards.forEach(card => card.style.height = maxHeight + 'px');
+});
+</script>
+    </section>
+        <section class="insides-section">
+  <h2 class="section-title">insides</h2>
+  
+<div class="video-block">
+  <div class="video-wrapper">
+    <video src="media/video-1.mov" autoplay muted loop></video>
+  </div>
+  <p class="insides-video-text">@instagdam - follow for more</p>
+</div>
+<div class="text-img-block">
+  <p class="insides-text">En portfolio er en samling av arbeider, prestasjoner eller investeringer, og begrepet brukes i flere sammenhenger: en kunstnerisk portfolio viser frem kunstneriske ferdigheter, en akademisk portfolio</p>
+  <div class="images-row">
+        <img src="media/content-2.jpg" class="insides-img">
+        <img src="media/content-4.jpg" class="insides-img">
+  </div>
+</div>
+</section>  
+      <section id="work" class="work-section">
+        <h2 class="section-title">work</h2>
+        <div class="work-cards" >
+            <a class="work-card" href="#legs">
+                <img src="media/leg-1.jpg">
+                <p>LEGS</p>
+            </a>
+           <a class="work-card" href="#back">
+                <img src="media/back-1.jpg">
+                <p>BACK</p>
+           </a>
+            <a class="work-card" href="#arms">
+                <img src="media/arm-1.jpg">
+                <p>ARMS</p>
+            </a>
+            <a class="work-card" href="#other">
+                <img src="media/other-1.jpg">
+                <p>OTHER</p>
+            </a>
+            <p class="work-contact">dont know where you want your next tatto? contact for consultation +47 999999999</p>
+        </div>
+    </section>
+    <section class="legs-gallery" id="legs">
+        <h1 class="legs-box-1" style="grid-area: box-1">LEGS</h1>
+        <img class="legs-box-2" style="grid-area: box-2"src="media/leg-1.jpg">
+        <img class="legs-box-3" style="grid-area: box-3"src="media/leg-2.jpg">
+        <img class="legs-box-4" style="grid-area: box-4"src="media/leg-3.jpg">
+        <img class="legs-box-5" style="grid-area: box-5"src="media/leg-4.jpg">
+        <img class="legs-box-6" style="grid-area: box-6"src="media/leg-5.jpg">
+        <img class="legs-box-7" style="grid-area: box-7"src="media/leg-6.jpg">
+        <img class="legs-box-8" style="grid-area: box-8"src="media/leg-7.jpg">
+    </section>
+
+    <section class="back-gallery" id="back">
+        <h1 class="back-box-1" style="grid-area: box-1" >BACK</h1>
+        <img class="back-box-2" style="grid-area: box-2" src="media/back-1.jpg">
+        <img class="back-box-3" style="grid-area: box-3" src="media/back-2.jpg">
+        <img class="back-box-4" style="grid-area: box-4" src="media/back-3.jpg">
+        <img class="back-box-5" style="grid-area: box-5" src="media/back-4.jpg">
+        <img class="back-box-6" style="grid-area: box-6" src="media/back-5.jpg">
+    </section>
+    <section class="arms-gallery" id="arms">
+        <h1 class="arms-box-1" style="grid-area: box-1">ARMS</h1>
+        <img class="arms-box-2" style="grid-area: box-2" src="media/arm-1.jpg">
+        <img class="arms-box-3" style="grid-area: box-3" src="media/arm-2.jpg">
+        <img class="arms-box-4" style="grid-area: box-4" src="media/arm-3.jpg">
+        <img class="arms-box-5" style="grid-area: box-5" src="media/arm-4.jpg">
+        <img class="arms-box-6" style="grid-area: box-6" src="media/arm-5.jpg">
+    </section>
+    <section class="other-gallery" id="other">
+        <img class="other-box-2" style="grid-area: box-2" src="media/other-1.jpg">
+        <img class="other-box-1" style="grid-area: box-1" src="media/other-2.jpg">
+        <h1 class="other-box-3" style="grid-area: box-3" ><span>OTHER</span></h1>
+        <img class="other-box-4" style="grid-area: box-4" src="media/other-3.jpg">
+        <img class="other-box-5" style="grid-area: box-5" src="media/other-4.jpg">
+        <img class="other-box-6" style="grid-area: box-6" src="media/other-5.jpg">
+        <img class="other-box-7" style="grid-area: box-7" src="media/other-6.jpg">
+        <img class="other-box-8" style="grid-area: box-8" src="media/other-7.jpg">
+    </section>
+    </section>
+    <section class="contact-section" id="contact">
+        <h1 class="contact-title">HOW TO CONTACT ME?</h1>
+        <div class="contact-row">
+  <div class="contact-info-wrapper">
+    <p class="contact-info">
+      contact information<br>
+      phone number<br>
+      instagram<br><br>
+      address of the studio
+    </p>
+  </div>
+  <div class="studio-wrapper">
+    <img src="media/studio.jpg" class="studio-img">
+    <img src="media/sticker-2.png" class="contact-sticker">
+  </div>
+</div>
+    </section>
+    <footer class="footer">
+        <h1 class="footer-title">YourName SecondName</h1>
+        <div class="footer-row">
+            <h2 class="footer-contact-info">
+                <a href="instagram">@intagram</a><br>
+                <a href="mailto:">gmail@gmail.com</a><br>
+                <a href="tel:">+9945539305</a>
+            </h2>
+            <h2 class="healing-text">do you want to know how to <a href="healing" >heal</a> your tattoo?</h2>
+        </div>
+        <div class="footer-links">
+            <a class="footer-link" href="#home">home</a>
+            <a class="footer-link" href="#about">about</a>
+            <a class="footer-link" href="#work">work</a>
+            <a class="footer-link" href="#contact">talk2me</a>
+            <a href="healing.html" class="btn-23 footer">
+                <span class="text">healing</span>
+                <span aria-hidden="true" class="marquee">healing</span>
+            </a>
+        </div>
+        <p class="footer-credit">© 2025 Client Name. Website by <a href="https://yourportfolio.com">Karyna Danilova</a>.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
